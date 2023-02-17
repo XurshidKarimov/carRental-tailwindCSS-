@@ -14,29 +14,37 @@ const swiper = new Swiper('.swiper', {
     type: 'bullets',
     clickable: true,
   },
-  mousewheel: {
-    invert: true,
-  },
 });
 
 //dark mode with local storage
 
 let html = document.querySelector("html");
 let mode = document.getElementById("changeMode");
+let darkSVG = mode.querySelector("#darkSVG");
+let lightSVG = mode.querySelector("#lightSVG");
 
-if(localStorage.theme === 'light'){
+if (localStorage.theme === 'light') {
   html.classList.remove('dark');
+  lightSVG.classList.add("hidden");
+  darkSVG.classList.remove("hidden");
 }
-else if(localStorage.theme === 'dark'){
+else if (localStorage.theme === 'dark') {
   html.classList.add('dark');
+  darkSVG.classList.add("hidden");
+  lightSVG.classList.toggle("hidden");
 }
 
 mode.addEventListener("click", (event) => {
   html.classList.toggle("dark");
-  if(!("theme" in localStorage) || localStorage.getItem("theme") === "light"){
+  if (!("theme" in localStorage) || localStorage.getItem("theme") === "light") {
     localStorage.setItem("theme", "dark");
+    darkSVG.classList.add("hidden");
+    lightSVG.classList.toggle("hidden");
   }
-  else{
+  else {
     localStorage.setItem("theme", "light");
+    lightSVG.classList.add("hidden");
+    darkSVG.classList.remove("hidden");
   }
 })
+//

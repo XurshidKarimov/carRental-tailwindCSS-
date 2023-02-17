@@ -4,51 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="theme-color" media="(prefers-color-scheme: light)" -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./css/swiper.css">
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <title>Car rental</title>
 </head>
-<body>
-  <button id="changeMode">Click</button>
-  <section>
-    <div class="container">
-      <div class="content">
-        <h1 class="bg-white dark:bg-slate-900 dark:text-white">HELLO</h1>
+<body class="dark:bg-main-black">
+    <header class="header w-full fixed top-0 left-0 z-[99999] border-b-[1.5px] bg-white dark:bg-main-black dark:border-card-black">
+      <div class="container">
+        <div class="header-content flex justify-between items-center py-[18px]">
+          <div class="header-content-left flex justify-between items-center gap-x-[20px]">
+            <a href="index.html">
+              <img src="./assets/logo/Logo.svg" alt="logo">
+            </a>
+            <nav class="navbar">
+              <ul class="navbar__nav-list flex justify-between items-center">
+                <li class="navbar__nav-item py-[18px] px-[16px] rounded-[100px] cursor-pointer hover:bg-hover-gray dark:hover:bg-card-black">
+                  <a class="navbar__menu-name  text-[18px] leading-[21.94px] dark:text-white" href="#">Categories</a>
+                </li>
+                <li class="group navbar__nav-item relative py-[18px] px-[16px] rounded-[100px] cursor-pointer hover:bg-hover-gray dark:hover:bg-card-black">
+                  <span class="navbar-select__menu flex justify-between items-center gap-x-[8px]">
+                    <span class="navbar__menu-name select-menu text-[18px] leading-[21.94px] rounded-[100px] dark:text-white">About us</span>
+                    <svg class="transition linear duration-300 group-hover:rotate-180" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="dark:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M9.15281 0.222116C9.4213 0.490602 9.4213 0.925902 9.15281 1.19439L5.48615 4.86105C5.21766 5.12954 4.78236 5.12954 4.51387 4.86105L0.847208 1.19439C0.578722 0.925903 0.578722 0.490602 0.847208 0.222116C1.11569 -0.0463691 1.55099 -0.0463691 1.81948 0.222116L5.00001 3.40265L8.18054 0.222116C8.44903 -0.0463694 8.88433 -0.0463694 9.15281 0.222116Z" fill="black"/>
+                    </svg>                      
+                  </span>
+                  <div class="group menu-origin absolute top-0 left-0 w-full h-full z-40 hover:pt-[70px]">
+                    <ul class="navbar__nested-menu-list flex-col rounded-[20px] shadow-nav-shadow bg-white p-[10px] hidden group-hover:flex dark:bg-card-black">
+                      <li class="nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:bg-card-black dark:hover:bg-main-black">
+                        <a class="nested-menu-list-link  text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">News</a>
+                      </li>
+                      <li class="nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:bg-card-black dark:hover:bg-main-black">
+                        <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">Careers</a>  
+                      </li>
+                      <li class="nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:bg-card-black dark:hover:bg-main-black">
+                        <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">Locations</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="group navbar__nav-item relative py-[18px] px-[16px] rounded-[100px] cursor-pointer hover:bg-hover-gray dark:hover:bg-card-black">
+                  <span class="navbar-select__menu flex justify-between items-center gap-x-[8px]">
+                    <span class="navbar__menu-name select-menu text-[18px] leading-[21.94px] rounded-[100px] cursor-pointer dark:text-white">Help center</span>
+                    <svg class="transition linear duration-300 group-hover:rotate-180" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="dark:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M9.15281 0.222116C9.4213 0.490602 9.4213 0.925902 9.15281 1.19439L5.48615 4.86105C5.21766 5.12954 4.78236 5.12954 4.51387 4.86105L0.847208 1.19439C0.578722 0.925903 0.578722 0.490602 0.847208 0.222116C1.11569 -0.0463691 1.55099 -0.0463691 1.81948 0.222116L5.00001 3.40265L8.18054 0.222116C8.44903 -0.0463694 8.88433 -0.0463694 9.15281 0.222116Z" fill="black"/>
+                    </svg> 
+                  </span>
+                  <div class="group menu-origin absolute top-0 left-0 w-full h-full z-40 hover:pt-[70px]">
+                    <ul class="navbar__nested-menu-list flex-col rounded-[20px] shadow-nav-shadow bg-white p-[10px] hidden group-hover:flex dark:bg-card-black">
+                      <li class="group nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:hover:bg-main-black">
+                        <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300  dark:text-white" href="#">FAQ</a>
+                      </li>
+                      <li class="group nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:hover:bg-main-black">
+                        <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-content-right flex justify-between items-center gap-x-[20px]">
+            <a class="header__number dark:text-white" href="tel:+18554200000">+1 855 420 0000</a>
+            <button class="group header__mode-switcher-btn btn flex justify-center items-center w-[58px] h-[58px] rounded-full bg-gray-100 active:bg-main-green dark:bg-card-black dark:active:bg-main-green" id="changeMode">
+              <svg class="" id="darkSVG" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition linear duration-300 group-hover:fill-black group-active:fill-white" d="M7.99998 0.208252C3.69676 0.208252 0.208313 3.6967 0.208313 7.99992C0.208313 12.3031 3.69676 15.7916 7.99998 15.7916C12.0495 15.7916 15.377 12.7027 15.7558 8.75226C15.7734 8.56841 15.6789 8.39193 15.5162 8.30463C15.3534 8.21732 15.1541 8.23624 15.0107 8.35262C14.2227 8.99207 13.2192 9.37492 12.125 9.37492C9.59367 9.37492 7.54165 7.32289 7.54165 4.79158C7.54165 3.28816 8.26503 1.9538 9.38468 1.11728C9.53272 1.00667 9.59986 0.817986 9.55496 0.63873C9.51005 0.459475 9.36189 0.324721 9.17919 0.296971C8.79438 0.238522 8.40057 0.208252 7.99998 0.208252Z" fill="#555555"/>
+              </svg>
+              <svg class="hidden" id="lightSVG" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                <path class="transition linear duration-300 dark:fill-white" fill="#fff" d="M11 1.146c.38 0 .688.308.688.687v.917a.688.688 0 0 1-1.376 0v-.917c0-.38.308-.687.688-.687ZM11 5.73a5.27 5.27 0 1 0 0 10.54 5.27 5.27 0 0 0 0-10.54ZM5.004 4.032a.688.688 0 0 0-.972.972l.648.648a.687.687 0 1 0 .973-.972l-.649-.648ZM20.854 11c0 .38-.308.687-.687.687h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM17.968 5.004a.687.687 0 1 0-.972-.972l-.648.648a.687.687 0 0 0 .972.972l.648-.648ZM11 18.562c.38 0 .688.308.688.688v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.688.688-.688ZM17.32 16.347a.688.688 0 1 0-.973.973l.649.648a.688.688 0 0 0 .972-.972l-.648-.649ZM3.437 11c0 .38-.307.687-.687.687h-.917a.688.688 0 0 1 0-1.375h.917c.38 0 .687.308.687.688ZM5.652 17.32a.688.688 0 0 0-.972-.973l-.648.649a.688.688 0 0 0 .972.972l.648-.648Z"/>
+              </svg>            
+            </button>
+            <button class="group header__login-btn btn flex justify-center items-center gap-x-[8px] py-[18px] px-[30px] rounded-[100px] transition linear duration-300 bg-main-green hover:bg-hover-green active:bg-hover-gray">
+              <span class="login__txt text-white transition linear duration-300 group-active:text-black">Login</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition linear duration-300 group-active:fill-black" d="M7.31248 14.4166C7.31248 14.0369 7.62028 13.7291 7.99998 13.7291H13.5C13.6265 13.7291 13.7291 13.6265 13.7291 13.4999L13.7291 2.49992C13.7291 2.37335 13.6265 2.27075 13.5 2.27075L7.99998 2.27075C7.62028 2.27075 7.31248 1.96295 7.31248 1.58325C7.31248 1.20356 7.62028 0.895752 7.99998 0.895752H13.5C14.3859 0.895752 15.1041 1.61396 15.1041 2.49992V13.4999C15.1041 14.3859 14.3859 15.1041 13.5 15.1041H7.99998C7.62028 15.1041 7.31248 14.7963 7.31248 14.4166Z" fill="white"/>
+                <path class="transition linear duration-300 group-active:fill-black" d="M0.208313 9.0222C0.208313 9.52846 0.618718 9.93887 1.12498 9.93887H5.5763C5.59732 10.2647 5.62363 10.5902 5.65524 10.9154L5.68243 11.1952C5.72664 11.65 6.20968 11.9225 6.62183 11.7249C8.29742 10.9219 9.81431 9.82305 11.0995 8.48117L11.127 8.4525C11.3718 8.19686 11.3718 7.79372 11.127 7.53809L11.0995 7.50942C9.81431 6.16753 8.29742 5.06866 6.62183 4.26564C6.20969 4.06812 5.72664 4.34055 5.68243 4.79544L5.65524 5.0752C5.62363 5.40037 5.59732 5.72592 5.5763 6.05173L1.12498 6.05173C0.618719 6.05173 0.208313 6.46214 0.208313 6.9684V9.0222Z" fill="white"/>
+              </svg>                
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
- 
-  
-    <section class="slide">
+    </header>
+
+    <section class="slide dark:bg-main-black">
         <div class="container">
-            <div class="slide-content overflow-hidden rounded-md">
-                <div class="swiper">
+            <div class="slide-content pt-[115px] cursor-pointer">
+                <div class="swiper overflow-hidden rounded-md">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="./assets/img__tinified/carousel__img/carousel__1.jpg" alt="car">
+                      <div class="swiper-slide relative">
+                        <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__1.jpg" alt="car" loading="lazy">
+                        <div class="slide-text-content w-[416px] absolute top-[60px] left-[50%] translate-x-[-50%] text-center">
+                          <h2 class="text-[36px] leading-[44px] text-white font-semibold">Compact cars</h2>
+                          <p class="text-[16px] leading-[20px] text-white font-normal">Rent cars as you are comfortable and where you are comfortable.</p>
+                        </div>
                       </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/img__tinified/carousel__img/carousel__2.jpg" alt="carAMG">
+                      <div class="swiper-slide relative">
+                        <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__2.jpg" alt="carAMG" loading="lazy">
+                        <div class="slide-text-content w-[416px] absolute top-[60px] left-[50%] translate-x-[-50%] text-center">
+                          <h2 class="text-[36px] leading-[44px] text-white font-semibold">Sport cars</h2>
+                          <p class="text-[16px] leading-[20px] text-white font-normal">Rent cars as you are comfortable and where you are comfortable.</p>
+                        </div>
                       </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/img__tinified/carousel__img/carousel__3.jpg" alt="carSUV">
+                      <div class="swiper-slide relative">
+                        <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__3.jpg" alt="carSUV" loading="lazy">
+                        <div class="slide-text-content w-[416px] absolute top-[60px] left-[50%] translate-x-[-50%] text-center">
+                          <h2 class="text-[36px] leading-[44px] text-white font-semibold">Vans</h2>
+                          <p class="text-[16px] leading-[20px] text-white font-normal">Rent cars as you are comfortable and where you are comfortable.</p>
+                        </div>
                       </div>
                     </div>
                     <div class="swiper-pagination"></div>
                   
-                    <div class="swiper-button-prev">
-                        <img src="./assets/swiper__elements/left__swiper__nav.svg" alt="sliderLeftArrow">
+                    <div class="swiper-button-prev group active:bg-main-green">
+                      <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="group-hover:fill-black group-active:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M4.69194 0.224806C4.44786 -0.0192714 4.05214 -0.0192714 3.80806 0.224806L0.474725 3.55814C0.230648 3.80222 0.230648 4.19795 0.474725 4.44202L3.80806 7.77536C4.05214 8.01943 4.44786 8.01943 4.69194 7.77536C4.93602 7.53128 4.93602 7.13555 4.69194 6.89147L1.80055 4.00008L4.69194 1.10869C4.93602 0.864612 4.93602 0.468884 4.69194 0.224806Z" fill="#555555"/>
+                        </svg>                        
                     </div>
-                    <div class="swiper-button-next">
-                        <img src="./assets/swiper__elements/right__swiper__nav.svg" alt="sliderRightArrow">
+                    <div class="swiper-button-next group active:bg-main-green">
+                      <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="group-hover:fill-black group-active:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M0.308058 0.224806C0.552136 -0.0192714 0.947864 -0.0192714 1.19194 0.224806L4.52527 3.55814C4.76935 3.80222 4.76935 4.19795 4.52527 4.44202L1.19194 7.77536C0.947864 8.01943 0.552136 8.01943 0.308058 7.77536C0.0639806 7.53128 0.0639806 7.13555 0.308058 6.89147L3.19945 4.00008L0.308058 1.10869C0.0639806 0.864612 0.0639806 0.468884 0.308058 0.224806Z" fill="#555555"/>
+                        </svg>                        
                     </div>
-                  
                   </div>
             </div>
         </div>
