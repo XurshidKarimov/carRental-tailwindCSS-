@@ -126,7 +126,7 @@
                         </svg>                        
                     </div>
                   </div>
-                  <form class="form flex min-w-[600px] p-[4px] bg-white overflow-hidden absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%] rounded-[100px] z-20" action="#" method="get" enctype="multipart/form-data">
+                  <form class="form flex min-w-[600px] p-[4px] bg-white overflow-hidden absolute bottom-0 left-[50%] z-20 translate-x-[-50%] translate-y-[50%] rounded-[100px] shadow-form-shadow" action="#" method="get" enctype="multipart/form-data">
                       <input class="form__input flex-grow border-none focus:ring-0" type="text" placeholder="Find the car of your dreams">
                       <button type="submit" class="group form__iconbox w-[58px] h-[58px] flex justify-center items-center rounded-full bg-main-green hover:bg-hover-green active:bg-hover-gray">
                         <svg class="form__search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +137,24 @@
             </div>
         </div>
     </section>
-    
+
+    <section class="choose-car">
+      <div class="container">
+        <div class="choose-car__content">
+          <div class="choose-car__title-block max-w-[570px] flex flex-col gap-y-[10px] mx-auto mb-[40px] text-center">
+            <h2 class="choose-car__title section-title transition-color linear duration-300 dark:text-white">Choose the car of your dreams</h2>
+            <p class="choose-car__subtitle section-subtitle dark:text-gray-100">We provide our customers with the most incredible driving emotions. That is why there are only world-class cars in our fleet</p>
+          </div>
+          <div class="choose-car__cars-block flex flex-col gap-y-[24px]">
+            <ul class="choose-car__type-tab flex gap-x-[16px] mx-auto">
+              <li class="py-[19px] px-[40px] bg-white text-black text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer">Compact</li>
+              <li class="py-[19px] px-[40px] bg-white text-black text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer">Sport cars</li>
+              <li class="py-[19px] px-[40px] bg-white text-black text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer">Vans</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>

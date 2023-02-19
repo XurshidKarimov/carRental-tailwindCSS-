@@ -22,6 +22,10 @@ let html = document.querySelector("html");
 let mode = document.getElementById("changeMode");
 let darkSVG = mode.querySelector("#darkSVG");
 let lightSVG = mode.querySelector("#lightSVG");
+let tabList = document.querySelector('.choose-car__type-tab');
+let tabListElements = Array.from(tabList.children);
+
+removeAddClass(tabListElements[0]);
 
 if (localStorage.theme === 'light') {
   html.classList.remove('dark');
@@ -48,3 +52,35 @@ mode.addEventListener("click", (event) => {
   }
 })
 //
+
+//CHOOSE-CAR TABS
+
+function removeAddClass(element, reverse = false){
+  if(!reverse){
+    element.classList.remove('bg-white', 'text-black');
+    element.classList.add('tab-active-element');
+  }
+  else{
+    element.classList.remove('tab-active-element');
+    element.classList.add('bg-white', 'text-black');
+  }
+}
+
+tabListElements.forEach((element, index) => {
+    element.setAttribute('key', index);
+})
+
+tabListElements.forEach((element, index, array) => {
+  element.addEventListener("click", (event) => {
+    //get key value from element
+    let keyAttributeValue = +event.target.getAttribute('key');
+    array.forEach((elementPassive, indexPassive) => {
+      if(indexPassive !== keyAttributeValue){
+        removeAddClass(tabListElements[indexPassive], true); 
+      }
+      else{
+        removeAddClass(tabListElements[keyAttributeValue]);
+      }
+    })
+  })
+})
