@@ -732,6 +732,16 @@ select {
   border: 1.5px solid lightgray;
 }
 
+.tab-element-light-default{
+  background-color: white;
+  color: black;
+}
+
+.tab-element-dark-default{
+  background-color: #1C1C1C;
+  color: white;
+}
+
 .tab-active-element{
   background-color: #299764;
   color: white;

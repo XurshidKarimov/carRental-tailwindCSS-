@@ -21,7 +21,17 @@
     .car-types-btn-border{
         border: 1.5px solid lightgray;
     }
-    
+
+    .tab-element-light-default{
+        background-color: white;
+        color: black;
+    }
+
+    .tab-element-dark-default{
+        background-color: theme('colors.main-black');
+        color: white;
+    }
+
     .tab-active-element{
         background-color: theme('colors.main-green');
         color: white;
