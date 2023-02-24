@@ -1,4 +1,5 @@
-import { removeAddClass } from "./functions.js";
+import { removeAddClass, render, getData, cardList } from "./functions.js";
+
 
 let html = document.querySelector("html");
 let mode = document.getElementById("changeMode");
@@ -55,23 +56,25 @@ mode.addEventListener("click", (event) => {
 //choose-car tab-menu reaction in darkMode 
 
 tabListElements.forEach((element, index) => {
-    element.setAttribute('key', index);
-  })
-  
-  tabListElements.forEach((element, index, array) => {
-    element.addEventListener("click", (event) => {
-      //get key value from element
-      let keyAttributeValue = +event.target.getAttribute('key');
-      activeElementIndex = keyAttributeValue;
-      array.forEach((elementPassive, indexPassive) => {
-        if (indexPassive !== keyAttributeValue) {
-          removeAddClass(tabListElements[indexPassive], true);
-        }
-        else {
-          removeAddClass(tabListElements[keyAttributeValue]);
-        }
-      })
+  element.setAttribute('key', index);
+})
+
+tabListElements.forEach((element, index, array) => {
+  element.addEventListener("click", (event) => {
+    cardList.innerHTML = null;
+    getData(event.target.dataset.type);
+    //get key value from element
+    let keyAttributeValue = +event.target.getAttribute('key');
+    activeElementIndex = keyAttributeValue;
+    array.forEach((elementPassive, indexPassive) => {
+      if (indexPassive !== keyAttributeValue) {
+        removeAddClass(tabListElements[indexPassive], true);
+      }
+      else {
+        removeAddClass(tabListElements[keyAttributeValue]);
+      }
     })
   })
+})
 
 export * as darkMode from './darkMode.js';

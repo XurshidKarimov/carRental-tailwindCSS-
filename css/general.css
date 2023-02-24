@@ -1,10 +1,50 @@
+:root {
+    --main-green: #299764;
+    --main-black: #1C1C1C;
+}
+
 .container {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43.88px;
+    color: black;
+}
+
+.section-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #555555;
+}
+
+.car-types-btn-border {
+    border: 1.5px solid lightgray;
+}
+
+.tab-element-light-default {
+    background-color: white;
+    color: black;
+}
+
+.tab-element-dark-default {
+    background-color: var(--main-black);
+    color: white;
+}
+
+.tab-active-element {
+    background-color: var(--main-green);
+    color: white;
+    border-color: var(--main-green);
 }

@@ -1,0 +1,184 @@
+{
+    "compact": [
+        {
+            "name": "Ford Fiesta",
+            "type": "Economy Car",
+            "src": "./assets/img__tinified/card__img/compact/ford-fiesta.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Nissan Versa",
+            "type": "Compact Car",
+            "src": "./assets/img__tinified/card__img/compact/nissan-versa.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Toyota Corolla",
+            "type": "Mid-size Car",
+            "src": "./assets/img__tinified/card__img/compact/toyota-corolla.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Nissan Rogue",
+            "type": "Mid-size SUV",
+            "src": "./assets/img__tinified/card__img/compact/nissan-rogue.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Chevy Traverse",
+            "type": "Full-size SUV",
+            "src": "./assets/img__tinified/card__img/compact/chevy-traverse.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Nissan Altima",
+            "type": "Full-size Car",
+            "src": "./assets/img__tinified/card__img/compact/nissan-altima.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        }
+    ],
+    "sportcar": [
+        {
+            "name": "Rolls-Royse Ghost",
+            "type": "Full-size Car",
+            "src": "./assets/img__tinified/card__img/sport-cars/rollce-royse.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Mercedes-Benz S-class",
+            "type": "Full-size Car",
+            "src": "./assets/img__tinified/card__img/sport-cars/mercedes__S.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Lamborghini Urus",
+            "type": "Mid-size Car",
+            "src": "./assets/img__tinified/card__img/sport-cars/Urus.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Mercedes-Benz AMG G63",
+            "type": "Full-size Car",
+            "src": "./assets/img__tinified/card__img/sport-cars/AMG.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        }
+    ],
+    "van": [
+        {
+            "name": "15-Passenger Ford Transit",
+            "type": "Full-size Car",
+            "src": "./assets/img__tinified/card__img/vans/passanger15__ford__transit__1.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Chrysler Pacifica",
+            "type": "Full-size Car",
+            "src": "./assets/img__tinified/card__img/vans/chrysler__pacifica.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Chevy Silverado 4500HD",
+            "type": "Mid-size Car",
+            "src": "./assets/img__tinified/card__img/vans/chevy__silverado__4500.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "12-Passenger Ford Transit",
+            "type": "Mid-size SUV",
+            "src": "./assets/img__tinified/card__img/vans/passanger12__ford__transit__1.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "15-Passenger Ford Transit",
+            "type": "Mid-size SUV",
+            "src": "./assets/img__tinified/card__img/vans/passanger15__ford__transit__2.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        },
+        {
+            "name": "Mercedes-Benz Sprinter",
+            "type": "Mid-size SUV",
+            "src": "./assets/img__tinified/card__img/vans/sprinter.png",
+            "info": {
+                "seats": "5 Seats",
+                "gear": "Automatic",
+                "age": "21+ Years",
+                "petrol": "1-lit/2.5 km"
+            }
+        }
+    ]
+}

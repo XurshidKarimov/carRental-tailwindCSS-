@@ -18,21 +18,21 @@
         color: #555555;
     }
 
-    .car-types-btn-border{
+    .car-types-btn-border {
         border: 1.5px solid lightgray;
     }
 
-    .tab-element-light-default{
+    .tab-element-light-default {
         background-color: white;
         color: black;
     }
 
-    .tab-element-dark-default{
+    .tab-element-dark-default {
         background-color: theme('colors.main-black');
         color: white;
     }
 
-    .tab-active-element{
+    .tab-active-element {
         background-color: theme('colors.main-green');
         color: white;
         border-color: theme('colors.main-green');

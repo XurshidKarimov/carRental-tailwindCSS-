@@ -149,14 +149,57 @@
           </div>
           <div class="choose-car__cars-block flex flex-col gap-y-[24px]">
             <ul class="choose-car__type-tab flex gap-x-[16px] mx-auto">
-              <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer">Compact</li>
-              <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer">Sport cars</li>
-              <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer">Vans</li>
+              <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer" data-type="compact">Compact</li>
+              <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer" data-type="sportcar">Sport cars</li>
+              <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer" data-type="van">Vans</li>
             </ul>
+
+            <ul class="choose-car__card-list grid grid-cols-cardGrid gap-[20px]"></ul>
           </div>
         </div>
       </div>
     </section>
+   
+    
+    <template class="choose-car__item-template">
+      <li class="group choose-card__card-item cursor-pointer bg-cardBGcolor transition linear duration-300 rounded-[16px] py-[30px] px-[24px] dark:bg-card-black hover:bg-main-green dark:hover:bg-main-green">
+        <div class="choose-card__card-item__top-content">
+          <h3 class="choose-card__card-item__car-name text-cardTitleFont text-cardTitleColor dark:text-white group-hover:text-white"></h3>
+          <p class="choose-card__card-item__car-type text-cardTypeFont text-cardTypeColor dark:text-white group-hover:text-white"></p>
+        </div>
+       <div class="choose-card__card-item__imgbox">
+          <img class="choose-card__card-item__img" src="" alt="">
+       </div>
+       <ul class="choose-card__card-item__bottom-content flex flex-wrap gap-y-[24px]">
+          <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M10 3.125C8.27411 3.125 6.875 4.52411 6.875 6.25C6.875 7.97589 8.27411 9.375 10 9.375C11.7259 9.375 13.125 7.97589 13.125 6.25C13.125 4.52411 11.7259 3.125 10 3.125Z" fill="black"/>
+              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M6.66666 11.0417C4.94077 11.0417 3.54166 12.4408 3.54166 14.1667V15.1569C3.54166 15.7846 3.99657 16.3198 4.61606 16.4209C8.18175 17.0031 11.8182 17.0031 15.3839 16.4209C16.0034 16.3198 16.4583 15.7846 16.4583 15.1569V14.1667C16.4583 12.4408 15.0592 11.0417 13.3333 11.0417H13.0493C12.8955 11.0417 12.7428 11.066 12.5966 11.1137L11.8753 11.3492C10.6568 11.7471 9.34322 11.7471 8.12465 11.3492L7.40339 11.1137C7.25724 11.066 7.10447 11.0417 6.95072 11.0417H6.66666Z" fill="black"/>
+            </svg>
+            <span class="choose-card__card-item__bottom-txt user text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
+          </li>
+          <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M10 2C5.582 2 2 5.582 2 10C2 14.418 5.582 18 10 18C14.418 18 18 14.418 18 10C18 5.582 14.418 2 10 2ZM14 9.6666C14 10.2189 13.5523 10.6666 13 10.6666H11.6666C11.1143 10.6666 10.6666 11.1143 10.6666 11.6666V13.3334C10.6666 13.7016 10.3682 14 10 14C9.63185 14 9.3334 13.7016 9.3334 13.3334V11.6666C9.3334 11.1143 8.88568 10.6666 8.3334 10.6666C7.78112 10.6666 7.3334 11.1143 7.3334 11.6666V13.3333C7.3334 13.7015 7.03491 14 6.6667 14C6.29849 14 6 13.7015 6 13.3333V6.6667C6 6.29849 6.29849 6 6.6667 6C7.03491 6 7.3334 6.29849 7.3334 6.6667V8.3334C7.3334 8.88568 7.78112 9.3334 8.3334 9.3334C8.88568 9.3334 9.3334 8.88568 9.3334 8.3334V6.6666C9.3334 6.29845 9.63185 6 10 6C10.3682 6 10.6666 6.29845 10.6666 6.6666V8.3334C10.6666 8.88568 11.1143 9.3334 11.6666 9.3334C12.2189 9.3334 12.6666 8.88568 12.6666 8.3334V6.6667C12.6666 6.29849 12.9651 6 13.3333 6C13.7015 6 14 6.29849 14 6.6667V9.6666Z" fill="black"/>
+            </svg>              
+            <span class="choose-card__card-item__bottom-txt gear text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
+          </li>
+          <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M11.875 2.08333C11.875 1.96827 11.7817 1.875 11.6667 1.875H5.83333C4.56768 1.875 3.54166 2.90102 3.54166 4.16667V15.8333C3.54166 17.099 4.56768 18.125 5.83333 18.125H14.1667C15.4323 18.125 16.4583 17.099 16.4583 15.8333V7.62255C16.4583 7.50749 16.3651 7.41422 16.25 7.41422H12.5C12.1548 7.41422 11.875 7.13439 11.875 6.78922V2.08333ZM10 8.33333C9.07952 8.33333 8.33333 9.07953 8.33333 10C8.33333 10.9205 9.07952 11.6667 10 11.6667C10.9205 11.6667 11.6667 10.9205 11.6667 10C11.6667 9.07953 10.9205 8.33333 10 8.33333ZM6.66666 15.4167C6.66666 14.036 7.78595 12.9167 9.16666 12.9167H10.8333C12.214 12.9167 13.3333 14.036 13.3333 15.4167C13.3333 15.8769 12.9602 16.25 12.5 16.25H7.5C7.03976 16.25 6.66666 15.8769 6.66666 15.4167Z" fill="black"/>
+              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M13.125 2.35345C13.125 2.1997 13.2855 2.10208 13.4052 2.19866C13.5059 2.28 13.5965 2.3753 13.6738 2.48296L16.1847 5.98121C16.2419 6.06085 16.18 6.16422 16.0819 6.16422H13.3333C13.2183 6.16422 13.125 6.07094 13.125 5.95588V2.35345Z" fill="black"/>
+            </svg>              
+            <span class="choose-card__card-item__bottom-txt user-file text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
+          </li>
+          <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M15 11.5499C15 14.4909 12.6215 16.875 9.6875 16.875C6.75349 16.875 4.375 14.4909 4.375 11.5499C4.375 8.60897 9.6875 3.125 9.6875 3.125C9.6875 3.125 15 8.60897 15 11.5499Z" fill="black"/>
+            </svg>              
+            <span class="choose-card__card-item__bottom-txt petrol text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
+          </li>
+       </ul>
+      </li>
+    </template>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="main.js"></script>
