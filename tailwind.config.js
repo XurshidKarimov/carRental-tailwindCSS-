@@ -16,9 +16,12 @@ module.exports = {
         'cardTypeColor': '#555555',
         'cardTitleColor': '#000000',
         'cardBGcolor': '#F5F5F5',
+        'googleFontcolor': '#4285F4',
+        'community-border-color': 'radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%)',
       },
       backgroundImage: {
         'instagram-color': 'radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%)',
+        'community-line': 'linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%)',
       },
       boxShadow: {
         'nav-shadow': '0px 4px 10px 0px rgba(0, 0, 0, 0.15)',

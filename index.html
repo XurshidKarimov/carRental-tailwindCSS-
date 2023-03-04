@@ -91,7 +91,7 @@
     <section class="slide dark:bg-main-black mb-[133px]">
         <div class="container">
             <div class="slide-content pt-[115px] cursor-pointer relative">
-                <div class="swiper overflow-hidden rounded-md">
+                <div class="swiper-container-1 swiper overflow-hidden rounded-md">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide relative">
                         <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__1.webp" alt="car" loading="lazy">
@@ -140,7 +140,7 @@
         </div>
     </section>
 
-    <section class="choose-car">
+    <section class="choose-car pb-[160px]">
       <div class="container">
         <div class="choose-car__content">
           <div class="choose-car__title-block max-w-[570px] flex flex-col gap-y-[10px] mx-auto mb-[40px] text-center">
@@ -160,6 +160,49 @@
       </div>
     </section>
    
+    <section class="community py-[100px] bg-hover-gray dark:bg-card-black">
+      <div class="container">
+        <div class="community-content flex overflow-hidden rounded-[20px] bg-white dark:bg-main-black">
+          <div class="community-content__leftside w-[37%] flex flex-col gap-y-[30px] p-[70px]">
+            <div class="community-content___leftside__top flex flex-col gap-y-[16px]">
+              <a class="flex items-center gap-x-[8px]" href="https://www.google.com">
+                <img src="./assets/icons/community-icons/google.svg" alt="google__icon">
+                <span class="text-[16px] text-googleFontcolor">From Google</span>             
+               </a>
+               <h2 class="text-[30px] leading-[50px] dark:text-white">Hear what the community is saying</h2>
+            </div>
+            <div class="community-content__color-line h-[2px] bg-community-line"></div>
+            <div class="community-content___leftside__bottom flex flex-col gap-y-[16px]">
+              <p class="community-content___leftside__bottom__text dark:text-white">More interesting reviews on Instagram</p>
+              <a class="relative w-fit py-[18px] px-[3px] bg-instagram-color rounded-[100px]" href="https://www.instagram.com">
+                  <span class="bg-white py-[18px] px-[50px] rounded-[100px]"><span class="bg-instagram-color bg-clip-text text-transparent bg-white dark:bg-main-black">Instagram</span></span> 
+              </a>
+            </div>
+          </div>
+          <div class="community-content__rightside">
+            <div class="swiper-container-2 swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <template class="choose-car__item-template">
       <li class="group choose-card__card-item cursor-pointer bg-cardBGcolor transition linear duration-300 rounded-[16px] py-[30px] px-[24px] dark:bg-card-black hover:bg-main-green dark:hover:bg-main-green">
