@@ -61,7 +61,6 @@ tabListElements.forEach((element, index) => {
 
 tabListElements.forEach((element, index, array) => {
   element.addEventListener("click", (event) => {
-    cardList.innerHTML = null;
     getData(event.target.dataset.type);
     //get key value from element
     let keyAttributeValue = +event.target.getAttribute('key');
