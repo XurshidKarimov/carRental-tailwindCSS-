@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container-1', {
+const swiper = new Swiper('.swiper1', {
   speed: 400,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -10,13 +10,13 @@ const swiper = new Swiper('.swiper-container-1', {
     delay: 2500,
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination1',
     type: 'bullets',
     clickable: true,
   },
 });
 
-const swiper2 = new Swiper('.swiper-container-2', {
+const swiper2 = new Swiper('community-swiper', {
   speed: 400,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -28,8 +28,8 @@ const swiper2 = new Swiper('.swiper-container-2', {
     delay: 2500,
   },
   pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
+    el: '.swiper-pagination2',
+    type: 'progressbar',
     clickable: true,
   },
 });

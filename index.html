@@ -1,250 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rental All type Cars">
-    <meta name="keywords" content="rental, cars, rental cars, cars rental">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" defer/>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Car rental</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rental All type Cars">
+  <meta name="keywords" content="rental, cars, rental cars, cars rental">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" defer/>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Car rental</title>
 </head>
 <body class="dark:bg-main-black">
-    <header class="header w-full fixed top-0 left-0 z-[99999] border-b-[1.5px] bg-white dark:bg-main-black dark:border-card-black">
-      <div class="container">
-        <div class="header-content flex justify-between items-center py-[18px]">
-          <div class="header-content-left flex justify-between items-center gap-x-[20px]">
-            <a href="index.html">
-              <img src="./assets/logo/Logo.svg" alt="logo">
-            </a>
-            <nav class="navbar">
-              <ul class="navbar__nav-list flex justify-between items-center">
-                <li class="navbar__nav-item py-[18px] px-[16px] rounded-[100px] cursor-pointer hover:bg-hover-gray dark:hover:bg-card-black">
-                  <a class="navbar__menu-name  text-[18px] leading-[21.94px] dark:text-white" href="#">Categories</a>
-                </li>
-                <li class="group navbar__nav-item relative py-[18px] px-[16px] rounded-[100px] cursor-pointer hover:bg-hover-gray dark:hover:bg-card-black">
-                  <span class="navbar-select__menu flex justify-between items-center gap-x-[8px]">
-                    <span class="navbar__menu-name select-menu text-[18px] leading-[21.94px] rounded-[100px] dark:text-white">About us</span>
-                    <svg class="transition linear duration-300 group-hover:rotate-180" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="dark:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M9.15281 0.222116C9.4213 0.490602 9.4213 0.925902 9.15281 1.19439L5.48615 4.86105C5.21766 5.12954 4.78236 5.12954 4.51387 4.86105L0.847208 1.19439C0.578722 0.925903 0.578722 0.490602 0.847208 0.222116C1.11569 -0.0463691 1.55099 -0.0463691 1.81948 0.222116L5.00001 3.40265L8.18054 0.222116C8.44903 -0.0463694 8.88433 -0.0463694 9.15281 0.222116Z" fill="black"/>
-                    </svg>                      
-                  </span>
-                  <div class="group menu-origin absolute top-0 left-0 w-full h-full z-40 hover:pt-[70px]">
-                    <ul class="navbar__nested-menu-list flex-col rounded-[20px] shadow-nav-shadow bg-white p-[10px] hidden group-hover:flex dark:bg-card-black">
-                      <li class="nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:bg-card-black dark:hover:bg-main-black">
-                        <a class="nested-menu-list-link  text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">News</a>
-                      </li>
-                      <li class="nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:bg-card-black dark:hover:bg-main-black">
-                        <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">Careers</a>  
-                      </li>
-                      <li class="nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:bg-card-black dark:hover:bg-main-black">
-                        <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">Locations</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="group navbar__nav-item relative py-[18px] px-[16px] rounded-[100px] cursor-pointer hover:bg-hover-gray dark:hover:bg-card-black">
-                  <span class="navbar-select__menu flex justify-between items-center gap-x-[8px]">
-                    <span class="navbar__menu-name select-menu text-[18px] leading-[21.94px] rounded-[100px] cursor-pointer dark:text-white">Help center</span>
-                    <svg class="transition linear duration-300 group-hover:rotate-180" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="dark:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M9.15281 0.222116C9.4213 0.490602 9.4213 0.925902 9.15281 1.19439L5.48615 4.86105C5.21766 5.12954 4.78236 5.12954 4.51387 4.86105L0.847208 1.19439C0.578722 0.925903 0.578722 0.490602 0.847208 0.222116C1.11569 -0.0463691 1.55099 -0.0463691 1.81948 0.222116L5.00001 3.40265L8.18054 0.222116C8.44903 -0.0463694 8.88433 -0.0463694 9.15281 0.222116Z" fill="black"/>
-                    </svg> 
-                  </span>
-                  <div class="group menu-origin absolute top-0 left-0 w-full h-full z-40 hover:pt-[70px]">
-                    <ul class="navbar__nested-menu-list flex-col rounded-[20px] shadow-nav-shadow bg-white p-[10px] hidden group-hover:flex dark:bg-card-black">
-                      <li class="group nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:hover:bg-main-black">
-                        <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300  dark:text-white" href="#">FAQ</a>
-                      </li>
-                      <li class="group nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:hover:bg-main-black">
-                        <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">Contact us</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-content-right flex justify-between items-center gap-x-[20px]">
-            <a class="header__number dark:text-white" href="tel:+18554200000">+1 855 420 0000</a>
-            <button class="group header__mode-switcher-btn btn flex justify-center items-center w-[58px] h-[58px] rounded-full bg-gray-100 active:bg-main-green dark:bg-card-black dark:active:bg-main-green" id="changeMode">
-              <svg class="" id="darkSVG" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="transition linear duration-300 group-hover:fill-black group-active:fill-white" d="M7.99998 0.208252C3.69676 0.208252 0.208313 3.6967 0.208313 7.99992C0.208313 12.3031 3.69676 15.7916 7.99998 15.7916C12.0495 15.7916 15.377 12.7027 15.7558 8.75226C15.7734 8.56841 15.6789 8.39193 15.5162 8.30463C15.3534 8.21732 15.1541 8.23624 15.0107 8.35262C14.2227 8.99207 13.2192 9.37492 12.125 9.37492C9.59367 9.37492 7.54165 7.32289 7.54165 4.79158C7.54165 3.28816 8.26503 1.9538 9.38468 1.11728C9.53272 1.00667 9.59986 0.817986 9.55496 0.63873C9.51005 0.459475 9.36189 0.324721 9.17919 0.296971C8.79438 0.238522 8.40057 0.208252 7.99998 0.208252Z" fill="#555555"/>
-              </svg>
-              <svg class="hidden" id="lightSVG" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
-                <path class="transition linear duration-300 dark:fill-white" fill="#fff" d="M11 1.146c.38 0 .688.308.688.687v.917a.688.688 0 0 1-1.376 0v-.917c0-.38.308-.687.688-.687ZM11 5.73a5.27 5.27 0 1 0 0 10.54 5.27 5.27 0 0 0 0-10.54ZM5.004 4.032a.688.688 0 0 0-.972.972l.648.648a.687.687 0 1 0 .973-.972l-.649-.648ZM20.854 11c0 .38-.308.687-.687.687h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM17.968 5.004a.687.687 0 1 0-.972-.972l-.648.648a.687.687 0 0 0 .972.972l.648-.648ZM11 18.562c.38 0 .688.308.688.688v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.688.688-.688ZM17.32 16.347a.688.688 0 1 0-.973.973l.649.648a.688.688 0 0 0 .972-.972l-.648-.649ZM3.437 11c0 .38-.307.687-.687.687h-.917a.688.688 0 0 1 0-1.375h.917c.38 0 .687.308.687.688ZM5.652 17.32a.688.688 0 0 0-.972-.973l-.648.649a.688.688 0 0 0 .972.972l.648-.648Z"/>
-              </svg>            
-            </button>
-            <button class="group header__login-btn btn flex justify-center items-center gap-x-[8px] py-[18px] px-[30px] rounded-[100px] transition linear duration-300 bg-main-green hover:bg-hover-green active:bg-hover-gray">
-              <span class="login__txt text-white transition linear duration-300 group-active:text-black">Login</span>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="transition linear duration-300 group-active:fill-black" d="M7.31248 14.4166C7.31248 14.0369 7.62028 13.7291 7.99998 13.7291H13.5C13.6265 13.7291 13.7291 13.6265 13.7291 13.4999L13.7291 2.49992C13.7291 2.37335 13.6265 2.27075 13.5 2.27075L7.99998 2.27075C7.62028 2.27075 7.31248 1.96295 7.31248 1.58325C7.31248 1.20356 7.62028 0.895752 7.99998 0.895752H13.5C14.3859 0.895752 15.1041 1.61396 15.1041 2.49992V13.4999C15.1041 14.3859 14.3859 15.1041 13.5 15.1041H7.99998C7.62028 15.1041 7.31248 14.7963 7.31248 14.4166Z" fill="white"/>
-                <path class="transition linear duration-300 group-active:fill-black" d="M0.208313 9.0222C0.208313 9.52846 0.618718 9.93887 1.12498 9.93887H5.5763C5.59732 10.2647 5.62363 10.5902 5.65524 10.9154L5.68243 11.1952C5.72664 11.65 6.20968 11.9225 6.62183 11.7249C8.29742 10.9219 9.81431 9.82305 11.0995 8.48117L11.127 8.4525C11.3718 8.19686 11.3718 7.79372 11.127 7.53809L11.0995 7.50942C9.81431 6.16753 8.29742 5.06866 6.62183 4.26564C6.20969 4.06812 5.72664 4.34055 5.68243 4.79544L5.65524 5.0752C5.62363 5.40037 5.59732 5.72592 5.5763 6.05173L1.12498 6.05173C0.618719 6.05173 0.208313 6.46214 0.208313 6.9684V9.0222Z" fill="white"/>
-              </svg>                
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="slide dark:bg-main-black mb-[133px]">
-        <div class="container">
-            <div class="slide-content pt-[115px] cursor-pointer relative">
-                <div class="swiper-container-1 swiper overflow-hidden rounded-md">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide relative">
-                        <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__1.webp" alt="car" loading="lazy">
-                        <div class="slide-text-content w-[416px] absolute top-[60px] left-[50%] translate-x-[-50%] text-center">
-                          <h2 class="text-[36px] leading-[44px] text-white font-semibold">Compact cars</h2>
-                          <p class="text-[16px] leading-[20px] text-white font-normal">Rent cars as you are comfortable and where you are comfortable.</p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide relative">
-                        <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__2.webp" alt="carAMG" loading="lazy">
-                        <div class="slide-text-content w-[416px] absolute top-[60px] left-[50%] translate-x-[-50%] text-center">
-                          <h2 class="text-[36px] leading-[44px] text-white font-semibold">Sport cars</h2>
-                          <p class="text-[16px] leading-[20px] text-white font-normal">Rent cars as you are comfortable and where you are comfortable.</p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide relative">
-                        <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__3.webp" alt="carSUV" loading="lazy">
-                        <div class="slide-text-content w-[416px] absolute top-[60px] left-[50%] translate-x-[-50%] text-center">
-                          <h2 class="text-[36px] leading-[44px] text-white font-semibold">Vans</h2>
-                          <p class="text-[16px] leading-[20px] text-white font-normal">Rent cars as you are comfortable and where you are comfortable.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                  
-                    <div class="swiper-button-prev group active:bg-main-green">
-                      <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="group-hover:fill-black group-active:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M4.69194 0.224806C4.44786 -0.0192714 4.05214 -0.0192714 3.80806 0.224806L0.474725 3.55814C0.230648 3.80222 0.230648 4.19795 0.474725 4.44202L3.80806 7.77536C4.05214 8.01943 4.44786 8.01943 4.69194 7.77536C4.93602 7.53128 4.93602 7.13555 4.69194 6.89147L1.80055 4.00008L4.69194 1.10869C4.93602 0.864612 4.93602 0.468884 4.69194 0.224806Z" fill="#555555"/>
-                        </svg>                        
-                    </div>
-                    <div class="swiper-button-next group active:bg-main-green">
-                      <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="group-hover:fill-black group-active:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M0.308058 0.224806C0.552136 -0.0192714 0.947864 -0.0192714 1.19194 0.224806L4.52527 3.55814C4.76935 3.80222 4.76935 4.19795 4.52527 4.44202L1.19194 7.77536C0.947864 8.01943 0.552136 8.01943 0.308058 7.77536C0.0639806 7.53128 0.0639806 7.13555 0.308058 6.89147L3.19945 4.00008L0.308058 1.10869C0.0639806 0.864612 0.0639806 0.468884 0.308058 0.224806Z" fill="#555555"/>
-                        </svg>                        
-                    </div>
-                  </div>
-                  <form class="form flex min-w-[600px] p-[4px] bg-white overflow-hidden absolute bottom-0 left-[50%] z-20 translate-x-[-50%] translate-y-[50%] rounded-[100px] shadow-form-shadow" action="#" method="get" enctype="multipart/form-data">
-                      <input class="form__input flex-grow border-none focus:ring-0" type="text" placeholder="Find the car of your dreams">
-                      <button type="submit" class="group form__iconbox w-[58px] h-[58px] flex justify-center items-center rounded-full bg-main-green hover:bg-hover-green active:bg-hover-gray">
-                        <svg class="form__search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path class="group-active:fill-black" fill-rule="evenodd" clip-rule="evenodd" d="M14.3851 15.4458C11.7348 17.5685 7.85538 17.4014 5.3986 14.9446C2.76256 12.3086 2.76256 8.0347 5.3986 5.39866C8.03464 2.76262 12.3085 2.76262 14.9445 5.39866C17.4013 7.85544 17.5684 11.7349 15.4457 14.3851L20.6014 19.5408C20.8943 19.8337 20.8943 20.3085 20.6014 20.6014C20.3085 20.8943 19.8336 20.8943 19.5407 20.6014L14.3851 15.4458ZM6.45926 13.8839C4.40901 11.8337 4.40901 8.50957 6.45926 6.45932C8.50951 4.40907 11.8336 4.40907 13.8839 6.45932C15.9326 8.50807 15.9341 11.8288 13.8884 13.8794C13.8869 13.8809 13.8854 13.8824 13.8839 13.8839C13.8824 13.8854 13.8809 13.8869 13.8794 13.8884C11.8288 15.9342 8.50801 15.9327 6.45926 13.8839Z" fill="white"/>
-                          </svg>                          
-                      </button>
-                  </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="choose-car pb-[160px]">
-      <div class="container">
-        <div class="choose-car__content">
-          <div class="choose-car__title-block max-w-[570px] flex flex-col gap-y-[10px] mx-auto mb-[40px] text-center">
-            <h2 class="choose-car__title section-title transition-color linear duration-300 dark:text-white">Choose the car of your dreams</h2>
-            <p class="choose-car__subtitle section-subtitle dark:text-gray-100">We provide our customers with the most incredible driving emotions. That is why there are only world-class cars in our fleet</p>
-          </div>
-          <div class="choose-car__cars-block flex flex-col gap-y-[24px]">
-            <ul class="choose-car__type-tab flex gap-x-[16px] mx-auto">
-              <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer" data-type="compact">Compact</li>
-              <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer" data-type="sportcar">Sport cars</li>
-              <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer" data-type="van">Vans</li>
+  <header class="header w-full fixed top-0 left-0 z-[99999] border-b-[1.5px] bg-white dark:bg-main-black dark:border-card-black">
+    <div class="container">
+      <div class="header-content flex justify-between items-center py-[18px]">
+        <div class="header-content-left flex justify-between items-center gap-x-[20px]">
+          <a href="index.html">
+            <img src="./assets/logo/Logo.svg" alt="logo">
+          </a>
+          <nav class="navbar">
+            <ul class="navbar__nav-list flex justify-between items-center">
+              <li class="navbar__nav-item py-[18px] px-[16px] rounded-[100px] cursor-pointer hover:bg-hover-gray dark:hover:bg-card-black">
+                <a class="navbar__menu-name  text-[18px] leading-[21.94px] dark:text-white" href="#">Categories</a>
+              </li>
+              <li class="group navbar__nav-item relative py-[18px] px-[16px] rounded-[100px] cursor-pointer hover:bg-hover-gray dark:hover:bg-card-black">
+                <span class="navbar-select__menu flex justify-between items-center gap-x-[8px]">
+                  <span class="navbar__menu-name select-menu text-[18px] leading-[21.94px] rounded-[100px] dark:text-white">About us</span>
+                  <svg class="transition linear duration-300 group-hover:rotate-180" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="dark:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M9.15281 0.222116C9.4213 0.490602 9.4213 0.925902 9.15281 1.19439L5.48615 4.86105C5.21766 5.12954 4.78236 5.12954 4.51387 4.86105L0.847208 1.19439C0.578722 0.925903 0.578722 0.490602 0.847208 0.222116C1.11569 -0.0463691 1.55099 -0.0463691 1.81948 0.222116L5.00001 3.40265L8.18054 0.222116C8.44903 -0.0463694 8.88433 -0.0463694 9.15281 0.222116Z" fill="black"/>
+                  </svg>                      
+                </span>
+                <div class="group menu-origin absolute top-0 left-0 w-full h-full z-40 hover:pt-[70px]">
+                  <ul class="navbar__nested-menu-list flex-col rounded-[20px] shadow-nav-shadow bg-white p-[10px] hidden group-hover:flex dark:bg-card-black">
+                    <li class="nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:bg-card-black dark:hover:bg-main-black">
+                      <a class="nested-menu-list-link  text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">News</a>
+                    </li>
+                    <li class="nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:bg-card-black dark:hover:bg-main-black">
+                      <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">Careers</a>  
+                    </li>
+                    <li class="nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:bg-card-black dark:hover:bg-main-black">
+                      <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">Locations</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group navbar__nav-item relative py-[18px] px-[16px] rounded-[100px] cursor-pointer hover:bg-hover-gray dark:hover:bg-card-black">
+                <span class="navbar-select__menu flex justify-between items-center gap-x-[8px]">
+                  <span class="navbar__menu-name select-menu text-[18px] leading-[21.94px] rounded-[100px] cursor-pointer dark:text-white">Help center</span>
+                  <svg class="transition linear duration-300 group-hover:rotate-180" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="dark:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M9.15281 0.222116C9.4213 0.490602 9.4213 0.925902 9.15281 1.19439L5.48615 4.86105C5.21766 5.12954 4.78236 5.12954 4.51387 4.86105L0.847208 1.19439C0.578722 0.925903 0.578722 0.490602 0.847208 0.222116C1.11569 -0.0463691 1.55099 -0.0463691 1.81948 0.222116L5.00001 3.40265L8.18054 0.222116C8.44903 -0.0463694 8.88433 -0.0463694 9.15281 0.222116Z" fill="black"/>
+                  </svg> 
+                </span>
+                <div class="group menu-origin absolute top-0 left-0 w-full h-full z-40 hover:pt-[70px]">
+                  <ul class="navbar__nested-menu-list flex-col rounded-[20px] shadow-nav-shadow bg-white p-[10px] hidden group-hover:flex dark:bg-card-black">
+                    <li class="group nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:hover:bg-main-black">
+                      <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300  dark:text-white" href="#">FAQ</a>
+                    </li>
+                    <li class="group nested-menu-list-item py-[18px] pl-[16px] rounded-[100px] hover:bg-hover-gray active:bg-main-green active:text-white dark:hover:bg-main-black">
+                      <a class="nested-menu-list-link text-[18px] leading-[21.94px] transition linear duration-300 dark:text-white" href="#">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
-
-            <ul class="choose-car__card-list grid grid-cols-cardGrid gap-[20px]"></ul>
-          </div>
+          </nav>
         </div>
-      </div>
-    </section>
-   
-    <section class="community py-[100px] bg-hover-gray dark:bg-card-black">
-      <div class="container">
-        <div class="community-content flex overflow-hidden rounded-[20px] bg-white dark:bg-main-black">
-          <div class="community-content__leftside w-[37%] flex flex-col gap-y-[30px] p-[70px]">
-            <div class="community-content___leftside__top flex flex-col gap-y-[16px]">
-              <a class="flex items-center gap-x-[8px]" href="https://www.google.com">
-                <img src="./assets/icons/community-icons/google.svg" alt="google__icon">
-                <span class="text-[16px] text-googleFontcolor">From Google</span>             
-               </a>
-               <h2 class="text-[30px] leading-[50px] dark:text-white">Hear what the community is saying</h2>
-            </div>
-            <div class="community-content__color-line h-[2px] bg-community-line"></div>
-            <div class="community-content___leftside__bottom flex flex-col gap-y-[16px]">
-              <p class="community-content___leftside__bottom__text dark:text-white">More interesting reviews on Instagram</p>
-              <a class="relative w-fit py-[18px] px-[3px] bg-instagram-color rounded-[100px]" href="https://www.instagram.com">
-                  <span class="bg-white py-[18px] px-[50px] rounded-[100px]"><span class="bg-instagram-color bg-clip-text text-transparent bg-white dark:bg-main-black">Instagram</span></span> 
-              </a>
-            </div>
-          </div>
-          <div class="community-content__rightside">
-            <div class="swiper-container-2 swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-            
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            
-              <!-- If we need scrollbar -->
-              <div class="swiper-scrollbar"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <template class="choose-car__item-template">
-      <li class="group choose-card__card-item cursor-pointer bg-cardBGcolor transition linear duration-300 rounded-[16px] py-[30px] px-[24px] dark:bg-card-black hover:bg-main-green dark:hover:bg-main-green">
-        <div class="choose-card__card-item__top-content">
-          <h3 class="choose-card__card-item__car-name text-cardTitleFont text-cardTitleColor dark:text-white group-hover:text-white"></h3>
-          <p class="choose-card__card-item__car-type text-cardTypeFont text-cardTypeColor dark:text-white group-hover:text-white"></p>
-        </div>
-       <div class="choose-card__card-item__imgbox">
-          <img class="choose-card__card-item__img" src="" alt="">
-       </div>
-       <ul class="choose-card__card-item__bottom-content flex flex-wrap gap-y-[24px]">
-          <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M10 3.125C8.27411 3.125 6.875 4.52411 6.875 6.25C6.875 7.97589 8.27411 9.375 10 9.375C11.7259 9.375 13.125 7.97589 13.125 6.25C13.125 4.52411 11.7259 3.125 10 3.125Z" fill="black"/>
-              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M6.66666 11.0417C4.94077 11.0417 3.54166 12.4408 3.54166 14.1667V15.1569C3.54166 15.7846 3.99657 16.3198 4.61606 16.4209C8.18175 17.0031 11.8182 17.0031 15.3839 16.4209C16.0034 16.3198 16.4583 15.7846 16.4583 15.1569V14.1667C16.4583 12.4408 15.0592 11.0417 13.3333 11.0417H13.0493C12.8955 11.0417 12.7428 11.066 12.5966 11.1137L11.8753 11.3492C10.6568 11.7471 9.34322 11.7471 8.12465 11.3492L7.40339 11.1137C7.25724 11.066 7.10447 11.0417 6.95072 11.0417H6.66666Z" fill="black"/>
+        <div class="header-content-right flex justify-between items-center gap-x-[20px]">
+          <a class="header__number dark:text-white" href="tel:+18554200000">+1 855 420 0000</a>
+          <button class="group header__mode-switcher-btn btn flex justify-center items-center w-[58px] h-[58px] rounded-full bg-gray-100 active:bg-main-green dark:bg-card-black dark:active:bg-main-green" id="changeMode">
+            <svg class="" id="darkSVG" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="transition linear duration-300 group-hover:fill-black group-active:fill-white" d="M7.99998 0.208252C3.69676 0.208252 0.208313 3.6967 0.208313 7.99992C0.208313 12.3031 3.69676 15.7916 7.99998 15.7916C12.0495 15.7916 15.377 12.7027 15.7558 8.75226C15.7734 8.56841 15.6789 8.39193 15.5162 8.30463C15.3534 8.21732 15.1541 8.23624 15.0107 8.35262C14.2227 8.99207 13.2192 9.37492 12.125 9.37492C9.59367 9.37492 7.54165 7.32289 7.54165 4.79158C7.54165 3.28816 8.26503 1.9538 9.38468 1.11728C9.53272 1.00667 9.59986 0.817986 9.55496 0.63873C9.51005 0.459475 9.36189 0.324721 9.17919 0.296971C8.79438 0.238522 8.40057 0.208252 7.99998 0.208252Z" fill="#555555"/>
             </svg>
-            <span class="choose-card__card-item__bottom-txt user text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
-          </li>
-          <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M10 2C5.582 2 2 5.582 2 10C2 14.418 5.582 18 10 18C14.418 18 18 14.418 18 10C18 5.582 14.418 2 10 2ZM14 9.6666C14 10.2189 13.5523 10.6666 13 10.6666H11.6666C11.1143 10.6666 10.6666 11.1143 10.6666 11.6666V13.3334C10.6666 13.7016 10.3682 14 10 14C9.63185 14 9.3334 13.7016 9.3334 13.3334V11.6666C9.3334 11.1143 8.88568 10.6666 8.3334 10.6666C7.78112 10.6666 7.3334 11.1143 7.3334 11.6666V13.3333C7.3334 13.7015 7.03491 14 6.6667 14C6.29849 14 6 13.7015 6 13.3333V6.6667C6 6.29849 6.29849 6 6.6667 6C7.03491 6 7.3334 6.29849 7.3334 6.6667V8.3334C7.3334 8.88568 7.78112 9.3334 8.3334 9.3334C8.88568 9.3334 9.3334 8.88568 9.3334 8.3334V6.6666C9.3334 6.29845 9.63185 6 10 6C10.3682 6 10.6666 6.29845 10.6666 6.6666V8.3334C10.6666 8.88568 11.1143 9.3334 11.6666 9.3334C12.2189 9.3334 12.6666 8.88568 12.6666 8.3334V6.6667C12.6666 6.29849 12.9651 6 13.3333 6C13.7015 6 14 6.29849 14 6.6667V9.6666Z" fill="black"/>
-            </svg>              
-            <span class="choose-card__card-item__bottom-txt gear text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
-          </li>
-          <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M11.875 2.08333C11.875 1.96827 11.7817 1.875 11.6667 1.875H5.83333C4.56768 1.875 3.54166 2.90102 3.54166 4.16667V15.8333C3.54166 17.099 4.56768 18.125 5.83333 18.125H14.1667C15.4323 18.125 16.4583 17.099 16.4583 15.8333V7.62255C16.4583 7.50749 16.3651 7.41422 16.25 7.41422H12.5C12.1548 7.41422 11.875 7.13439 11.875 6.78922V2.08333ZM10 8.33333C9.07952 8.33333 8.33333 9.07953 8.33333 10C8.33333 10.9205 9.07952 11.6667 10 11.6667C10.9205 11.6667 11.6667 10.9205 11.6667 10C11.6667 9.07953 10.9205 8.33333 10 8.33333ZM6.66666 15.4167C6.66666 14.036 7.78595 12.9167 9.16666 12.9167H10.8333C12.214 12.9167 13.3333 14.036 13.3333 15.4167C13.3333 15.8769 12.9602 16.25 12.5 16.25H7.5C7.03976 16.25 6.66666 15.8769 6.66666 15.4167Z" fill="black"/>
-              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M13.125 2.35345C13.125 2.1997 13.2855 2.10208 13.4052 2.19866C13.5059 2.28 13.5965 2.3753 13.6738 2.48296L16.1847 5.98121C16.2419 6.06085 16.18 6.16422 16.0819 6.16422H13.3333C13.2183 6.16422 13.125 6.07094 13.125 5.95588V2.35345Z" fill="black"/>
-            </svg>              
-            <span class="choose-card__card-item__bottom-txt user-file text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
-          </li>
-          <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M15 11.5499C15 14.4909 12.6215 16.875 9.6875 16.875C6.75349 16.875 4.375 14.4909 4.375 11.5499C4.375 8.60897 9.6875 3.125 9.6875 3.125C9.6875 3.125 15 8.60897 15 11.5499Z" fill="black"/>
-            </svg>              
-            <span class="choose-card__card-item__bottom-txt petrol text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
-          </li>
-       </ul>
-      </li>
-    </template>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="main.js"></script>
+            <svg class="hidden" id="lightSVG" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+              <path class="transition linear duration-300 dark:fill-white" fill="#fff" d="M11 1.146c.38 0 .688.308.688.687v.917a.688.688 0 0 1-1.376 0v-.917c0-.38.308-.687.688-.687ZM11 5.73a5.27 5.27 0 1 0 0 10.54 5.27 5.27 0 0 0 0-10.54ZM5.004 4.032a.688.688 0 0 0-.972.972l.648.648a.687.687 0 1 0 .973-.972l-.649-.648ZM20.854 11c0 .38-.308.687-.687.687h-.917a.687.687 0 1 1 0-1.375h.917c.38 0 .687.308.687.688ZM17.968 5.004a.687.687 0 1 0-.972-.972l-.648.648a.687.687 0 0 0 .972.972l.648-.648ZM11 18.562c.38 0 .688.308.688.688v.917a.687.687 0 1 1-1.376 0v-.917c0-.38.308-.688.688-.688ZM17.32 16.347a.688.688 0 1 0-.973.973l.649.648a.688.688 0 0 0 .972-.972l-.648-.649ZM3.437 11c0 .38-.307.687-.687.687h-.917a.688.688 0 0 1 0-1.375h.917c.38 0 .687.308.687.688ZM5.652 17.32a.688.688 0 0 0-.972-.973l-.648.649a.688.688 0 0 0 .972.972l.648-.648Z"/>
+            </svg>            
+          </button>
+          <button class="group header__login-btn btn flex justify-center items-center gap-x-[8px] py-[18px] px-[30px] rounded-[100px] transition linear duration-300 bg-main-green hover:bg-hover-green active:bg-hover-gray">
+            <span class="login__txt text-white transition linear duration-300 group-active:text-black">Login</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="transition linear duration-300 group-active:fill-black" d="M7.31248 14.4166C7.31248 14.0369 7.62028 13.7291 7.99998 13.7291H13.5C13.6265 13.7291 13.7291 13.6265 13.7291 13.4999L13.7291 2.49992C13.7291 2.37335 13.6265 2.27075 13.5 2.27075L7.99998 2.27075C7.62028 2.27075 7.31248 1.96295 7.31248 1.58325C7.31248 1.20356 7.62028 0.895752 7.99998 0.895752H13.5C14.3859 0.895752 15.1041 1.61396 15.1041 2.49992V13.4999C15.1041 14.3859 14.3859 15.1041 13.5 15.1041H7.99998C7.62028 15.1041 7.31248 14.7963 7.31248 14.4166Z" fill="white"/>
+              <path class="transition linear duration-300 group-active:fill-black" d="M0.208313 9.0222C0.208313 9.52846 0.618718 9.93887 1.12498 9.93887H5.5763C5.59732 10.2647 5.62363 10.5902 5.65524 10.9154L5.68243 11.1952C5.72664 11.65 6.20968 11.9225 6.62183 11.7249C8.29742 10.9219 9.81431 9.82305 11.0995 8.48117L11.127 8.4525C11.3718 8.19686 11.3718 7.79372 11.127 7.53809L11.0995 7.50942C9.81431 6.16753 8.29742 5.06866 6.62183 4.26564C6.20969 4.06812 5.72664 4.34055 5.68243 4.79544L5.65524 5.0752C5.62363 5.40037 5.59732 5.72592 5.5763 6.05173L1.12498 6.05173C0.618719 6.05173 0.208313 6.46214 0.208313 6.9684V9.0222Z" fill="white"/>
+            </svg>                
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="slide dark:bg-main-black mb-[133px]">
+    <div class="container">
+      <div class="slide-content pt-[115px] cursor-pointer relative">
+        <div class="swiper swiper1 overflow-hidden rounded-md">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide relative">
+              <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__1.webp" alt="car" loading="lazy">
+              <div class="slide-text-content w-[416px] absolute top-[60px] left-[50%] translate-x-[-50%] text-center">
+                <h2 class="text-[36px] leading-[44px] text-white font-semibold">Compact cars</h2>
+                <p class="text-[16px] leading-[20px] text-white font-normal">Rent cars as you are comfortable and where you are comfortable.</p>
+              </div>
+            </div>
+            <div class="swiper-slide relative">
+              <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__2.webp" alt="carAMG" loading="lazy">
+              <div class="slide-text-content w-[416px] absolute top-[60px] left-[50%] translate-x-[-50%] text-center">
+                <h2 class="text-[36px] leading-[44px] text-white font-semibold">Sport cars</h2>
+                <p class="text-[16px] leading-[20px] text-white font-normal">Rent cars as you are comfortable and where you are comfortable.</p>
+              </div>
+            </div>
+            <div class="swiper-slide relative">
+              <img class="slide__img" src="./assets/img__tinified/carousel__img/carousel__3.webp" alt="carSUV" loading="lazy">
+              <div class="slide-text-content w-[416px] absolute top-[60px] left-[50%] translate-x-[-50%] text-center">
+                <h2 class="text-[36px] leading-[44px] text-white font-semibold">Vans</h2>
+                <p class="text-[16px] leading-[20px] text-white font-normal">Rent cars as you are comfortable and where you are comfortable.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination1"></div>
+          
+          <div class="swiper-button-prev group active:bg-main-green">
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="group-hover:fill-black group-active:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M4.69194 0.224806C4.44786 -0.0192714 4.05214 -0.0192714 3.80806 0.224806L0.474725 3.55814C0.230648 3.80222 0.230648 4.19795 0.474725 4.44202L3.80806 7.77536C4.05214 8.01943 4.44786 8.01943 4.69194 7.77536C4.93602 7.53128 4.93602 7.13555 4.69194 6.89147L1.80055 4.00008L4.69194 1.10869C4.93602 0.864612 4.93602 0.468884 4.69194 0.224806Z" fill="#555555"/>
+            </svg>                        
+          </div>
+          <div class="swiper-button-next group active:bg-main-green">
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="group-hover:fill-black group-active:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M0.308058 0.224806C0.552136 -0.0192714 0.947864 -0.0192714 1.19194 0.224806L4.52527 3.55814C4.76935 3.80222 4.76935 4.19795 4.52527 4.44202L1.19194 7.77536C0.947864 8.01943 0.552136 8.01943 0.308058 7.77536C0.0639806 7.53128 0.0639806 7.13555 0.308058 6.89147L3.19945 4.00008L0.308058 1.10869C0.0639806 0.864612 0.0639806 0.468884 0.308058 0.224806Z" fill="#555555"/>
+            </svg>                        
+          </div>
+        </div>
+        <form class="form flex min-w-[600px] p-[4px] bg-white overflow-hidden absolute bottom-0 left-[50%] z-20 translate-x-[-50%] translate-y-[50%] rounded-[100px] shadow-form-shadow" action="#" method="get" enctype="multipart/form-data">
+          <input class="form__input flex-grow border-none focus:ring-0" type="text" placeholder="Find the car of your dreams">
+          <button type="submit" class="group form__iconbox w-[58px] h-[58px] flex justify-center items-center rounded-full bg-main-green hover:bg-hover-green active:bg-hover-gray">
+            <svg class="form__search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="group-active:fill-black" fill-rule="evenodd" clip-rule="evenodd" d="M14.3851 15.4458C11.7348 17.5685 7.85538 17.4014 5.3986 14.9446C2.76256 12.3086 2.76256 8.0347 5.3986 5.39866C8.03464 2.76262 12.3085 2.76262 14.9445 5.39866C17.4013 7.85544 17.5684 11.7349 15.4457 14.3851L20.6014 19.5408C20.8943 19.8337 20.8943 20.3085 20.6014 20.6014C20.3085 20.8943 19.8336 20.8943 19.5407 20.6014L14.3851 15.4458ZM6.45926 13.8839C4.40901 11.8337 4.40901 8.50957 6.45926 6.45932C8.50951 4.40907 11.8336 4.40907 13.8839 6.45932C15.9326 8.50807 15.9341 11.8288 13.8884 13.8794C13.8869 13.8809 13.8854 13.8824 13.8839 13.8839C13.8824 13.8854 13.8809 13.8869 13.8794 13.8884C11.8288 15.9342 8.50801 15.9327 6.45926 13.8839Z" fill="white"/>
+            </svg>                          
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <section class="choose-car pb-[160px]">
+    <div class="container">
+      <div class="choose-car__content">
+        <div class="choose-car__title-block max-w-[570px] flex flex-col gap-y-[10px] mx-auto mb-[40px] text-center">
+          <h2 class="choose-car__title section-title transition-color linear duration-300 dark:text-white">Choose the car of your dreams</h2>
+          <p class="choose-car__subtitle section-subtitle dark:text-gray-100">We provide our customers with the most incredible driving emotions. That is why there are only world-class cars in our fleet</p>
+        </div>
+        <div class="choose-car__cars-block flex flex-col gap-y-[24px]">
+          <ul class="choose-car__type-tab flex gap-x-[16px] mx-auto">
+            <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer" data-type="compact">Compact</li>
+            <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer" data-type="sportcar">Sport cars</li>
+            <li class="py-[19px] px-[40px] tab-element-light-default text-[16px] leading-[19.5px] rounded-[100px] car-types-btn-border transition linear duration-300 cursor-pointer" data-type="van">Vans</li>
+          </ul>
+          
+          <ul class="choose-car__card-list grid grid-cols-cardGrid gap-[20px]"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="community py-[100px] bg-hover-gray dark:bg-card-black">
+    <div class="container">
+      <div class="community-content flex overflow-hidden rounded-[20px] bg-white dark:bg-main-black">
+        <div class="community-content__leftside min-w-[37%] flex flex-col gap-y-[30px] p-[70px]">
+          <div class="community-content___leftside__top flex flex-col gap-y-[16px]">
+            <a class="flex items-center gap-x-[8px]" href="https://www.google.com">
+              <img src="./assets/icons/community-icons/google.svg" alt="google__icon">
+              <span class="text-[16px] text-googleFontcolor">From Google</span>             
+            </a>
+            <h2 class="text-[30px] leading-[50px] dark:text-white">Hear what the community is saying</h2>
+          </div>
+          <div class="community-content__color-line h-[2px] bg-community-line"></div>
+          <div class="community-content___leftside__bottom flex flex-col gap-y-[16px]">
+            <p class="community-content___leftside__bottom__text dark:text-white">More interesting reviews on Instagram</p>
+            <a class="relative w-fit py-[18px] px-[3px] bg-instagram-color rounded-[100px]" href="https://www.instagram.com">
+              <span class="bg-white py-[18px] px-[50px] rounded-[100px]"><span class="bg-instagram-color bg-clip-text text-transparent bg-white dark:bg-main-black">Instagram</span></span> 
+            </a>
+          </div>
+        </div>
+        <div class="community-content__rightside flex-grow pt-[50px] pl-[40px] pb-[40px] bg-hover-green dark:bg-main-green">
+          <div class="swiper community-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper gap-[20px]">
+              <!-- Slides -->
+              <div class="swiper-slide community-swiper__card max-w-[420px] h-[333px] p-[24px] rounded-[16px] overflow-hidden cursor-pointer bg-white dark:bg-main-black">
+                <div class="community-swiper__card-main__content flex flex-col gap-y-[16px]">
+                  <div class="community-swiper__card-top flex justify-between">
+                    <div class="community-swiper__card-top-left flex gap-x-[12px] items-center">
+                      <img class="w-[42px] h-[42px] rounded-full" src="./assets/img__tinified/community___img/community1.jpg" alt="img">
+                      <div class="community-swiper__card-top-left-info flex flex-col gap-y-[5px]">
+                        <h4 class="community-swiper__user-name text-[16px] dark:text-white">Savannah Nguyen</h4>
+                        <span class="community-swiper__user-gmail text-[14px] dark:text-white">savannahnguyen@gmail.com</span>
+                      </div>
+                    </div>
+                    <div class="w-[42px] h-[42px] flex items-center justify-center rounded-full bg-white">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2768 11.2387C21.2768 10.4941 21.21 9.77822 21.0859 9.09094H11.1968V13.1525H16.8477C16.6043 14.465 15.8645 15.5771 14.7525 16.3216V18.9562H18.1459C20.1313 17.1282 21.2768 14.4364 21.2768 11.2387Z" fill="#4285F4"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1964 21.5C14.0314 21.5 16.4082 20.5597 18.1455 18.9561L14.7521 16.3215C13.8118 16.9515 12.6091 17.3238 11.1964 17.3238C8.46159 17.3238 6.14682 15.4768 5.32113 12.9949H1.81317V15.7154C3.5409 19.147 7.09182 21.5 11.1964 21.5Z" fill="#34A853"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32156 12.995C5.11156 12.365 4.99224 11.692 4.99224 10.9999C4.99224 10.3079 5.11156 9.63495 5.32156 9.00495V6.28448H1.8136C1.10246 7.70199 0.696777 9.30563 0.696777 10.9999C0.696777 12.6943 1.10246 14.2979 1.8136 15.7154L5.32156 12.995Z" fill="#FBBC05"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1964 4.67615C12.738 4.67615 14.1221 5.20592 15.2102 6.24638L18.2218 3.23478C16.4034 1.54046 14.0266 0.5 11.1964 0.5C7.09182 0.5 3.5409 2.85296 1.81317 6.28456L5.32113 9.00502C6.14682 6.52319 8.46159 4.67615 11.1964 4.67615Z" fill="#EA4335"/>
+                      </svg>                        
+                    </div>
+                  </div>
+                  <p class="community-swiper__card-txt text-[14px] font-normal leading-[20px] dark:text-white">
+                    Sagittis sed tortor, elementum vitae varius sodales consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat. Venenatis hendrerit cursus egestas sit ornare nunc vulputate aliquam sapien. Pulvinar nunc consectetur nibh consectetur mollis mauris est mauris amet. Sed hac vehicula id et dui morbi quam pulvinar condimentum. Senectus sed varius interdum nunc, arcu vulputate massa.
+                  </p>
+                  <div class="community-card-line h-[1.5px] my[24px] bg-[#E5E7EA] dark:bg-card-black"></div>
+                  <div class="community-star-rating flex gap-x-[16px]">
+                    <span class="dark:text-white">Star rating:</span>
+                    <div class="community-card-stars flex items-center gap-x-[7px]">
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>                                         
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="swiper-slide community-swiper__card max-w-[420px] h-[333px] p-[24px] rounded-[16px] overflow-hidden cursor-pointer bg-white dark:bg-main-black">
+                <div class="community-swiper__card-main__content flex flex-col gap-y-[16px]">
+                  <div class="community-swiper__card-top flex justify-between">
+                    <div class="community-swiper__card-top-left flex gap-x-[12px] items-center">
+                      <img class="w-[42px] h-[42px] rounded-full" src="./assets/img__tinified/community___img/community2.jpg" alt="img">
+                      <div class="community-swiper__card-top-left-info flex flex-col gap-y-[5px]">
+                        <h4 class="community-swiper__user-name text-[16px] dark:text-white">Ronald Richards</h4>
+                        <span class="community-swiper__user-gmail text-[14px] dark:text-white">ronaldrichards@gmail.com</span>
+                      </div>
+                    </div>
+                    <div class="w-[42px] h-[42px] flex items-center justify-center rounded-full bg-white">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2768 11.2387C21.2768 10.4941 21.21 9.77822 21.0859 9.09094H11.1968V13.1525H16.8477C16.6043 14.465 15.8645 15.5771 14.7525 16.3216V18.9562H18.1459C20.1313 17.1282 21.2768 14.4364 21.2768 11.2387Z" fill="#4285F4"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1964 21.5C14.0314 21.5 16.4082 20.5597 18.1455 18.9561L14.7521 16.3215C13.8118 16.9515 12.6091 17.3238 11.1964 17.3238C8.46159 17.3238 6.14682 15.4768 5.32113 12.9949H1.81317V15.7154C3.5409 19.147 7.09182 21.5 11.1964 21.5Z" fill="#34A853"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32156 12.995C5.11156 12.365 4.99224 11.692 4.99224 10.9999C4.99224 10.3079 5.11156 9.63495 5.32156 9.00495V6.28448H1.8136C1.10246 7.70199 0.696777 9.30563 0.696777 10.9999C0.696777 12.6943 1.10246 14.2979 1.8136 15.7154L5.32156 12.995Z" fill="#FBBC05"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1964 4.67615C12.738 4.67615 14.1221 5.20592 15.2102 6.24638L18.2218 3.23478C16.4034 1.54046 14.0266 0.5 11.1964 0.5C7.09182 0.5 3.5409 2.85296 1.81317 6.28456L5.32113 9.00502C6.14682 6.52319 8.46159 4.67615 11.1964 4.67615Z" fill="#EA4335"/>
+                      </svg>                        
+                    </div>
+                  </div>
+                  <p class="community-swiper__card-txt text-[14px] font-normal leading-[20px] dark:text-white">
+                    Placerat pulvinar in amet sem id gravida nisi leo. A dignissim est pellentesque mi quisque vel mi ut. Porttitor blandit auctor odio a ornare felis tortor bibendum molestie. 
+                  </p>
+                  <div class="community-card-line h-[1.5px] my[24px] bg-[#E5E7EA] dark:bg-card-black"></div>
+                  <div class="community-star-rating flex gap-x-[16px]">
+                    <span class="dark:text-white">Star rating:</span>
+                    <div class="community-card-stars flex items-center gap-x-[7px]">
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>                                         
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide community-swiper__card max-w-[420px] h-[333px] p-[24px] rounded-[16px] overflow-hidden cursor-pointer bg-white dark:bg-main-black">
+                <div class="community-swiper__card-main__content flex flex-col gap-y-[16px]">
+                  <div class="community-swiper__card-top flex justify-between">
+                    <div class="community-swiper__card-top-left flex gap-x-[12px] items-center">
+                      <img class="w-[42px] h-[42px] rounded-full" src="./assets/img__tinified/community___img/community3.jpg" alt="img">
+                      <div class="community-swiper__card-top-left-info flex flex-col gap-y-[5px]">
+                        <h4 class="community-swiper__user-name text-[16px] dark:text-white">Kristin Watson</h4>
+                        <span class="community-swiper__user-gmail text-[14px] dark:text-white">kristinwatson@gmail.com</span>
+                      </div>
+                    </div>
+                    <div class="w-[42px] h-[42px] flex items-center justify-center rounded-full bg-white">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2768 11.2387C21.2768 10.4941 21.21 9.77822 21.0859 9.09094H11.1968V13.1525H16.8477C16.6043 14.465 15.8645 15.5771 14.7525 16.3216V18.9562H18.1459C20.1313 17.1282 21.2768 14.4364 21.2768 11.2387Z" fill="#4285F4"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1964 21.5C14.0314 21.5 16.4082 20.5597 18.1455 18.9561L14.7521 16.3215C13.8118 16.9515 12.6091 17.3238 11.1964 17.3238C8.46159 17.3238 6.14682 15.4768 5.32113 12.9949H1.81317V15.7154C3.5409 19.147 7.09182 21.5 11.1964 21.5Z" fill="#34A853"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32156 12.995C5.11156 12.365 4.99224 11.692 4.99224 10.9999C4.99224 10.3079 5.11156 9.63495 5.32156 9.00495V6.28448H1.8136C1.10246 7.70199 0.696777 9.30563 0.696777 10.9999C0.696777 12.6943 1.10246 14.2979 1.8136 15.7154L5.32156 12.995Z" fill="#FBBC05"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1964 4.67615C12.738 4.67615 14.1221 5.20592 15.2102 6.24638L18.2218 3.23478C16.4034 1.54046 14.0266 0.5 11.1964 0.5C7.09182 0.5 3.5409 2.85296 1.81317 6.28456L5.32113 9.00502C6.14682 6.52319 8.46159 4.67615 11.1964 4.67615Z" fill="#EA4335"/>
+                      </svg>                        
+                    </div>
+                  </div>
+                  <p class="community-swiper__card-txt text-[14px] font-normal leading-[20px] dark:text-white">
+                    Id adipiscing vulputate arcu pretium dignissim. Felis vulputate tellus velit consectetur. Congue convallis aliquam eget ullamcorper quam pellentesque cursus. Dictumst mauris ac, quis orci morbi ultrices faucibus volutpat mauris. Bibendum sed ut lectus facilisi amet orci. Interdum massa orci urna id ac cras arcu.
+                  </p>
+                  <div class="community-card-line h-[1.5px] my[24px] bg-[#E5E7EA] dark:bg-card-black"></div>
+                  <div class="community-star-rating flex gap-x-[16px]">
+                    <span class="dark:text-white">Star rating:</span>
+                    <div class="community-card-stars flex items-center gap-x-[7px]">
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.72083 0.496863C9.39968 -0.0565958 8.60042 -0.056598 8.27927 0.496863L6.01756 4.39462C5.85892 4.66802 5.58471 4.8546 5.27216 4.90181L1.03356 5.54199C0.321659 5.64952 0.0719426 6.54836 0.626364 7.00769L3.78394 9.62371C4.07622 9.86587 4.21366 10.2478 4.14266 10.6207L3.31668 14.9583C3.18611 15.644 3.90594 16.1768 4.52356 15.8516L8.51473 13.75C8.81851 13.5901 9.18159 13.5901 9.48537 13.75L13.4765 15.8516C14.0942 16.1768 14.814 15.644 14.6834 14.9583L13.8574 10.6207C13.7864 10.2478 13.9239 9.86587 14.2162 9.62371L17.3737 7.00769C17.9282 6.54836 17.6784 5.64952 16.9665 5.54199L12.7279 4.90181C12.4154 4.8546 12.1412 4.66802 11.9825 4.39462L9.72083 0.496863Z" fill="#299764"/>
+                      </svg>                                         
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination2"></div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <template class="choose-car__item-template">
+    <li class="group choose-card__card-item cursor-pointer bg-cardBGcolor transition linear duration-300 rounded-[16px] py-[30px] px-[24px] dark:bg-card-black hover:bg-main-green dark:hover:bg-main-green">
+      <div class="choose-card__card-item__top-content">
+        <h3 class="choose-card__card-item__car-name text-cardTitleFont text-cardTitleColor dark:text-white group-hover:text-white"></h3>
+        <p class="choose-card__card-item__car-type text-cardTypeFont text-cardTypeColor dark:text-white group-hover:text-white"></p>
+      </div>
+      <div class="choose-card__card-item__imgbox">
+        <img class="choose-card__card-item__img" src="" alt="">
+      </div>
+      <ul class="choose-card__card-item__bottom-content flex flex-wrap gap-y-[24px]">
+        <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M10 3.125C8.27411 3.125 6.875 4.52411 6.875 6.25C6.875 7.97589 8.27411 9.375 10 9.375C11.7259 9.375 13.125 7.97589 13.125 6.25C13.125 4.52411 11.7259 3.125 10 3.125Z" fill="black"/>
+            <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M6.66666 11.0417C4.94077 11.0417 3.54166 12.4408 3.54166 14.1667V15.1569C3.54166 15.7846 3.99657 16.3198 4.61606 16.4209C8.18175 17.0031 11.8182 17.0031 15.3839 16.4209C16.0034 16.3198 16.4583 15.7846 16.4583 15.1569V14.1667C16.4583 12.4408 15.0592 11.0417 13.3333 11.0417H13.0493C12.8955 11.0417 12.7428 11.066 12.5966 11.1137L11.8753 11.3492C10.6568 11.7471 9.34322 11.7471 8.12465 11.3492L7.40339 11.1137C7.25724 11.066 7.10447 11.0417 6.95072 11.0417H6.66666Z" fill="black"/>
+          </svg>
+          <span class="choose-card__card-item__bottom-txt user text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
+        </li>
+        <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M10 2C5.582 2 2 5.582 2 10C2 14.418 5.582 18 10 18C14.418 18 18 14.418 18 10C18 5.582 14.418 2 10 2ZM14 9.6666C14 10.2189 13.5523 10.6666 13 10.6666H11.6666C11.1143 10.6666 10.6666 11.1143 10.6666 11.6666V13.3334C10.6666 13.7016 10.3682 14 10 14C9.63185 14 9.3334 13.7016 9.3334 13.3334V11.6666C9.3334 11.1143 8.88568 10.6666 8.3334 10.6666C7.78112 10.6666 7.3334 11.1143 7.3334 11.6666V13.3333C7.3334 13.7015 7.03491 14 6.6667 14C6.29849 14 6 13.7015 6 13.3333V6.6667C6 6.29849 6.29849 6 6.6667 6C7.03491 6 7.3334 6.29849 7.3334 6.6667V8.3334C7.3334 8.88568 7.78112 9.3334 8.3334 9.3334C8.88568 9.3334 9.3334 8.88568 9.3334 8.3334V6.6666C9.3334 6.29845 9.63185 6 10 6C10.3682 6 10.6666 6.29845 10.6666 6.6666V8.3334C10.6666 8.88568 11.1143 9.3334 11.6666 9.3334C12.2189 9.3334 12.6666 8.88568 12.6666 8.3334V6.6667C12.6666 6.29849 12.9651 6 13.3333 6C13.7015 6 14 6.29849 14 6.6667V9.6666Z" fill="black"/>
+          </svg>              
+          <span class="choose-card__card-item__bottom-txt gear text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
+        </li>
+        <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M11.875 2.08333C11.875 1.96827 11.7817 1.875 11.6667 1.875H5.83333C4.56768 1.875 3.54166 2.90102 3.54166 4.16667V15.8333C3.54166 17.099 4.56768 18.125 5.83333 18.125H14.1667C15.4323 18.125 16.4583 17.099 16.4583 15.8333V7.62255C16.4583 7.50749 16.3651 7.41422 16.25 7.41422H12.5C12.1548 7.41422 11.875 7.13439 11.875 6.78922V2.08333ZM10 8.33333C9.07952 8.33333 8.33333 9.07953 8.33333 10C8.33333 10.9205 9.07952 11.6667 10 11.6667C10.9205 11.6667 11.6667 10.9205 11.6667 10C11.6667 9.07953 10.9205 8.33333 10 8.33333ZM6.66666 15.4167C6.66666 14.036 7.78595 12.9167 9.16666 12.9167H10.8333C12.214 12.9167 13.3333 14.036 13.3333 15.4167C13.3333 15.8769 12.9602 16.25 12.5 16.25H7.5C7.03976 16.25 6.66666 15.8769 6.66666 15.4167Z" fill="black"/>
+            <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M13.125 2.35345C13.125 2.1997 13.2855 2.10208 13.4052 2.19866C13.5059 2.28 13.5965 2.3753 13.6738 2.48296L16.1847 5.98121C16.2419 6.06085 16.18 6.16422 16.0819 6.16422H13.3333C13.2183 6.16422 13.125 6.07094 13.125 5.95588V2.35345Z" fill="black"/>
+          </svg>              
+          <span class="choose-card__card-item__bottom-txt user-file text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
+        </li>
+        <li class="choose-card__card-item__bottom-element w-1/2 flex items-center gap-x-[12px]">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="choose-card__card-item__svg-element dark:fill-white group-hover:fill-white" d="M15 11.5499C15 14.4909 12.6215 16.875 9.6875 16.875C6.75349 16.875 4.375 14.4909 4.375 11.5499C4.375 8.60897 9.6875 3.125 9.6875 3.125C9.6875 3.125 15 8.60897 15 11.5499Z" fill="black"/>
+          </svg>              
+          <span class="choose-card__card-item__bottom-txt petrol text-cardBottomFont text-black dark:text-white group-hover:text-white"></span>            
+        </li>
+      </ul>
+    </li>
+  </template>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
